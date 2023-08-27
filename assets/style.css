@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.road{
+    width: 100%;
+    height: 100vh
+}
+
+.box{
+    width: 60px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    right: 277px;
+    bottom: 426px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+   
+}
+.light{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+   margin-top: 5px;
+   
+}
+.red{
+    background-color: rgb(80, 7, 7);
+    animation-name: redColor;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+.yellow{
+    background-color: rgb(52, 52, 5);
+    animation-name: yellowColor;
+    animation-delay: 30s;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+  
+}
+.green{
+    background-color: rgb(4, 45, 4);
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-name: greenColor;
+}
+.stick{
+    width: 10px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    right: 304px;
+    bottom: 377px;
+}
+
+@keyframes redColor{
+    0%{
+        background-color:  rgb(80, 7, 7);
+    }
+    55%{
+        background-color:  rgb(80, 7, 7);
+    }
+    65%{
+        background-color: red;
+    }
+    95%{
+        background-color: red;
+    }
+    100%{
+        background-color:  rgb(80, 7, 7);
+    }
+
+    }
+    @keyframes yellowColor{
+        0%{
+            background-color: rgb(2, 11, 2);
+        }
+        45%{
+            background-color:  rgb(51, 60, 26);
+        }
+        55%{
+            background-color: yellow;
+        }
+        80%{
+            background-color:rgb(51, 60, 26);
+        }
+        100%{
+            background-color: rgb(51, 60, 26);
+        }
+    
+        }
+
+        @keyframes greenColor{
+            0%{
+                background-color: rgb(2, 11, 2);
+            }
+            55%{
+                background-color: green;
+            }
+            65%{
+                background-color:green;
+            }
+            99%{
+                background-color: green;
+            }
+            100%{
+                background-color: rgb(2, 11, 2);
+            }
+            }
+        
